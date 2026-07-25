@@ -13,6 +13,7 @@ extends Node
 ## Preloads the inithousingloc (base floor).
 var initialhousinglocation : PackedScene = preload("res://Areas/initousingloc.tscn")
 
+var fieldOneLocation : PackedScene = preload("res://field_one.tscn")
 
 ## Stores the flat land representing a location. [br]
 ## Called via [method getLocationStorage] in locationInitialiser. 
@@ -34,4 +35,10 @@ func initialiseLocations():
 	add_child(localMovement)
 	localMovement.position = Vector3(16,0,0)
 	locationStorage.append(localMovement)
+	
+	localMovement = fieldOneLocation.instantiate()
+	add_child(localMovement)
+	localMovement.position = Vector3(30,0,0)
+	locationStorage.append(localMovement)
+	
 	return getLocationStorage()

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b5rnfsgw1i6yb"]
 
+[ext_resource type="Script" uid="uid://dfxhpriou5oqb" path="res://field_one.gd" id="1_8rko2"]
 [ext_resource type="PackedScene" uid="uid://qsbjhce4yrpa" path="res://Areas/inithousearea.tscn" id="1_43gsj"]
 [ext_resource type="PackedScene" uid="uid://3iuv6knkvth1" path="res://field_area.tscn" id="2_mcvmn"]
 
@@ -12,6 +13,7 @@ albedo_color = Color(0.3764706, 0.2509804, 0.015686275, 1)
 points = PackedVector3Array(-1, 0, -1, -1, 0, 1, 1, 0, -1, 1, 0, 1)
 
 [node name="fieldOne" type="Node3D" unique_id=176177761]
+script = ExtResource("1_8rko2")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1472931639]
 

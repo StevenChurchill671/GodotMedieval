@@ -1,4 +1,5 @@
 extends Area3D
+
 var containedHouse
 
 func replaceStructure(newStructure):

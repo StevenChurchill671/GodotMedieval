@@ -16,6 +16,8 @@ func startMap(location):
 func forEachLocationIn(locationList):
 	for location in locationList:
 		startMap(location)
+		
+
 var personScene : PackedScene = preload("res://person.tscn")
 var person
 func testVillager(house):
