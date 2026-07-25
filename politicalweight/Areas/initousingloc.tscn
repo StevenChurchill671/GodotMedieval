@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cbhe00ynebmpu"]
+
+[ext_resource type="Script" uid="uid://bbh02n6h42v83" path="res://Areas/initousingloc.gd" id="1_f13te"]
+[ext_resource type="PackedScene" uid="uid://qsbjhce4yrpa" path="res://Areas/inithousearea.tscn" id="2_gcdfv"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_g4v7s"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yf5fn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf5fn"]
+albedo_color = Color(0.16250607, 0.46717334, 0.35893312, 1)
+
+[node name="initousingloc" type="Node3D" unique_id=707973534]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+script = ExtResource("1_f13te")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=956526127]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=519085618]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_g4v7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D" unique_id=597545837]
+transform = Transform3D(9.113161, 0, 0, 0, 1, 0, 0, 0, 9.597419, 0, 0, 0)
+mesh = SubResource("PlaneMesh_yf5fn")
+surface_material_override/0 = SubResource("StandardMaterial3D_yf5fn")
+
+[node name="inithousearea" parent="." unique_id=1893808890 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.02, 2, -9.893)
+
+[node name="inithousearea2" parent="." unique_id=158735141 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.998, 2, 0)
+
+[node name="inithousearea3" parent="." unique_id=1030322278 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.187, 2, 0)
+
+[node name="inithousearea4" parent="." unique_id=1465516833 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.339, 2, 9.643)
+
+[node name="inithousearea5" parent="." unique_id=1404192634 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.992089, 2, 9.643)
+
+[node name="inithousearea6" parent="." unique_id=72454680 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.339, 2, -9.679387)
