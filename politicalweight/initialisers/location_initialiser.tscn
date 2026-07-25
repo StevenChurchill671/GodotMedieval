@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cdain30anl6f3"]
+
+[ext_resource type="Script" uid="uid://byi4txecmacui" path="res://initialisers/location_initialiser.gd" id="1_8e27r"]
+
+[node name="locationInitialiser" type="Node" unique_id=342454759]
+script = ExtResource("1_8e27r")

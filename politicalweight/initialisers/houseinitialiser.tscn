@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dqem61q16uny6"]
+
+[ext_resource type="Script" uid="uid://0mnd5lv1p30n" path="res://initialisers/houseinitialiser.gd" id="1_n3ahp"]
+
+[node name="houseinitialiser" type="Node" unique_id=387739536]
+script = ExtResource("1_n3ahp")

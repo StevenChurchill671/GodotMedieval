@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://23jg7w0lvr4b"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_huihk"]
+
+[sub_resource type="Sky" id="Sky_bf3um"]
+sky_material = SubResource("ProceduralSkyMaterial_huihk")
+
+[sub_resource type="Environment" id="Environment_g4v7s"]
+background_mode = 2
+sky = SubResource("Sky_bf3um")
+sky_rotation = Vector3(0, -0.15358898, 0)
+
+[node name="sun" type="DirectionalLight3D" unique_id=534742038]
+transform = Transform3D(1, 0, 0, 0, 0.8338858, 0.551937, 0, -0.551937, 0.8338858, -23.656656, 211.07205, 0)
+light_color = Color(0.79607844, 0.7647059, 0.7490196, 1)
+light_energy = 2.173
+light_volumetric_fog_energy = 0.68
+light_angular_distance = 9.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1906096582]
+environment = SubResource("Environment_g4v7s")
