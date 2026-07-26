@@ -18,7 +18,7 @@ script = ExtResource("1_8rko2")
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1472931639]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=755332673]
-transform = Transform3D(52.302464, 0, 0, 0, 1.069479, 0, 0, 0, 25.486343, 0.0041241646, 0, 0)
+transform = Transform3D(52, 0, 0, 0, 1.063, 0, 0, 0, 25.339, 0, 0, 0)
 mesh = SubResource("PlaneMesh_g4v7s")
 surface_material_override/0 = SubResource("StandardMaterial3D_yf5fn")
 
@@ -40,7 +40,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.24259, 2.5, -20.399244)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.786546, 2.5000038, -20.322525)
 
 [node name="fieldArea" parent="." unique_id=1855100109 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.978537, 1.3236504, -12.821494)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.979, 2, -12.851)
 
 [node name="inithousearea5" parent="." unique_id=2046400611 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1214485, 2.5, -9.734786)
@@ -127,10 +127,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.952038, 2.5000038, -8.2255
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.879387, 2.5000038, -7.9263725)
 
 [node name="fieldArea2" parent="." unique_id=1373550262 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 28.419598, 2.0390625, -12.181585)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27.631, 2, -12.182)
 
 [node name="fieldArea3" parent="." unique_id=456606633 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 28.2669, 2.0390625, 12.854284)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27.763, 2, 12.854)
 
 [node name="fieldArea4" parent="." unique_id=786889867 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.356274, 2.0390549, 13.026787)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.187, 2, 13.027)

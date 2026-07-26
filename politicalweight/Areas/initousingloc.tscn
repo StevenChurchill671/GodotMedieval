@@ -26,19 +26,49 @@ mesh = SubResource("PlaneMesh_yf5fn")
 surface_material_override/0 = SubResource("StandardMaterial3D_yf5fn")
 
 [node name="inithousearea" parent="." unique_id=1893808890 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.02, 2, -9.893)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, -10)
 
-[node name="inithousearea2" parent="." unique_id=158735141 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.998, 2, 0)
+[node name="inithousearea2" parent="." unique_id=2064908071 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, -4)
 
-[node name="inithousearea3" parent="." unique_id=1030322278 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.187, 2, 0)
+[node name="inithousearea3" parent="." unique_id=295595486 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, -4)
 
-[node name="inithousearea4" parent="." unique_id=1465516833 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.339, 2, 9.643)
+[node name="inithousearea4" parent="." unique_id=1955866672 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, -10)
 
-[node name="inithousearea5" parent="." unique_id=1404192634 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.992089, 2, 9.643)
+[node name="inithousearea5" parent="." unique_id=1892905652 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 4.58409)
 
-[node name="inithousearea6" parent="." unique_id=72454680 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.339, 2, -9.679387)
+[node name="inithousearea6" parent="." unique_id=994085761 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 10.58409)
+
+[node name="inithousearea7" parent="." unique_id=1153171205 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 10.58409)
+
+[node name="inithousearea8" parent="." unique_id=2061431522 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 4.58409)
+
+[node name="inithousearea9" parent="." unique_id=1141618550 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, -10)
+
+[node name="inithousearea10" parent="." unique_id=456025061 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, -4)
+
+[node name="inithousearea11" parent="." unique_id=541024261 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, -4)
+
+[node name="inithousearea12" parent="." unique_id=1618703890 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, -10)
+
+[node name="inithousearea13" parent="." unique_id=1094842199 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, 4.5183277)
+
+[node name="inithousearea14" parent="." unique_id=141746350 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, 10.518328)
+
+[node name="inithousearea15" parent="." unique_id=1567851832 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, 10.518328)
+
+[node name="inithousearea16" parent="." unique_id=710590935 instance=ExtResource("2_gcdfv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, 4.5183277)

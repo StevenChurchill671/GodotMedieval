@@ -10,4 +10,5 @@ script = ExtResource("1_0pife")
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=458264323]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=485357418]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = SubResource("CapsuleMesh_yf5fn")

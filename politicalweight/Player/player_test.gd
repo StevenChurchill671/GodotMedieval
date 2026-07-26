@@ -6,7 +6,7 @@ var camera = $Camera3D
 @onready
 var collisionShape = get_child(1)
 var stamina =  0
-var maxStamina =   20
+var maxStamina =   100
 @export var speed = 8.0 # Movement speed
 var originalSpeed = speed
 @export var gravity = 50.0 # Gravity

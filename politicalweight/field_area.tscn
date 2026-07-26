@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://3iuv6knkvth1"]
 
+[ext_resource type="Script" uid="uid://lwp3iww0ahbk" path="res://field_area.gd" id="1_fbbje"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
-size = Vector3(1.9731445, 0.6508789, 4.1533203)
+size = Vector3(1.9731445, 0.55444336, 4.1533203)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf5fn"]
 albedo_color = Color(0.24224862, 0.47950482, 0.15645, 1)
 
 [node name="fieldArea" type="Area3D" unique_id=1855100109]
+script = ExtResource("1_fbbje")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=493510562]
-transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 0.48657227, 1.8662109, -1.5766602)
+transform = Transform3D(11, 0, 0, 0, 11, 0, 0, 0, 11, 0, 0.5786133, 0)
 mesh = SubResource("BoxMesh_g4v7s")
 surface_material_override/0 = SubResource("StandardMaterial3D_yf5fn")

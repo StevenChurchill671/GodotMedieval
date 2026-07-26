@@ -38,7 +38,7 @@ func initialiseLocations():
 	
 	localMovement = fieldOneLocation.instantiate()
 	add_child(localMovement)
-	localMovement.position = Vector3(30,0,0)
+	localMovement.position = Vector3(95,0,0)
 	locationStorage.append(localMovement)
 	
 	return getLocationStorage()

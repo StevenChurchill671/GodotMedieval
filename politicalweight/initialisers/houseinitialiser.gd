@@ -1,7 +1,8 @@
 extends Node
 ## Preloads houseOne.
 var houseOne : PackedScene = preload("res://housing/houseone.tscn")
-
+##
+var sheepField
 func startMap(location):
 	for houseArea in location.passHousingAreas():
 		houseArea.get_child(0).hide()
@@ -23,5 +24,6 @@ var person
 func testVillager(house):
 	person = personScene.instantiate()
 	house.add_child(person)
+	person.position += Vector3(1,0,1)
 	person.applyHouse(house)
 	

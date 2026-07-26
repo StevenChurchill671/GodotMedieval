@@ -1,7 +1,17 @@
 extends Node3D
 var localHousingAreas =[]
+
+
+
 func _ready():
-	var localHousingAreas = [get_child(1),get_child(2),get_child(3),get_child(4),get_child(5),get_child(6)]
+	iterateThroughAreas()
 func passHousingAreas():
-	var localHousingAreas = [get_child(1),get_child(2),get_child(3),get_child(4),get_child(5),get_child(6)]
+	iterateThroughAreas()
 	return localHousingAreas
+
+func iterateThroughAreas():
+	var childrenArray = get_children()
+	for child in childrenArray:
+		if child.has_method("replaceStructure"):
+			localHousingAreas.append(child)
+	

@@ -1,9 +1,10 @@
 extends Area3D
 
-var containedHouse
+var containedStructure
+var isActive = false
 
 func replaceStructure(newStructure):
-	containedHouse = newStructure
+	containedStructure = newStructure
 	if get_child_count()> 1:
 		get_child(1).queue_free()
 		add_child(newStructure)
