@@ -5,9 +5,3 @@
 [node name="setup" type="SubViewportContainer" unique_id=1231093594]
 editor_description = "experimental"
 script = ExtResource("1_yujpc")
-
-[node name="SubViewport" type="SubViewport" parent="." unique_id=1181244828]
-
-[node name="ColorRect" type="ColorRect" parent="SubViewport" unique_id=1167105626]
-offset_right = 40.0
-offset_bottom = 40.0

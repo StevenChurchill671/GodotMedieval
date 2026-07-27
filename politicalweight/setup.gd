@@ -6,8 +6,8 @@ func printSpecsForConfig():
 
 func _ready():
 	printSpecsForConfig()
-	var newChildOne = SubViewport.new()
-	add_child(newChildOne)
+	#var newChildOne = SubViewport.new()
+	#add_child(newChildOne)
 	#var childTwo = VBoxContainer.new()
 	#PanelContainer.PRESET_FULL_RECT
 	#newChildOne.add_child(childTwo)
@@ -22,9 +22,11 @@ func createMap(locations):
 		var housingAreas =  location.passHousingAreas()
 		for house in housingAreas:
 			var rect = ColorRect.new()
-			get_child(0).add_child(rect)
+			add_child(rect)
 			if house.size == 1:
 				rect.color = Color(0.769, 0.113, 0.51, 1.0)
 			if house.size == 8:
 				rect.color = Color(0.0, 0.357, 0.0, 1.0)
 			rect.set_position(Vector2(house.position.x,house.position.z))
+			rect.set_size(Vector2(1,2))
+			print("rect")
