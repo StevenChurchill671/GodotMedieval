@@ -6,14 +6,14 @@ func printSpecsForConfig():
 
 func _ready():
 	printSpecsForConfig()
-	var newChildOne = PanelContainer.new()
+	var newChildOne = SubViewport.new()
 	add_child(newChildOne)
-	var childTwo = VBoxContainer.new()
-	PanelContainer.PRESET_FULL_RECT
-	newChildOne.add_child(childTwo)
-	newChildOne = Label.new()
-	childTwo.add_child(newChildOne)
-	newChildOne.text = "hey"
+	#var childTwo = VBoxContainer.new()
+	#PanelContainer.PRESET_FULL_RECT
+	#newChildOne.add_child(childTwo)
+	#newChildOne = Label.new()
+	#childTwo.add_child(newChildOne)
+	#newChildOne.text = "hey"
 
 func createMap(locations):
 	var translateAmount = Vector2(0.2,0.2)
@@ -22,7 +22,7 @@ func createMap(locations):
 		var housingAreas =  location.passHousingAreas()
 		for house in housingAreas:
 			var rect = ColorRect.new()
-			add_child(rect)
+			get_child(0).add_child(rect)
 			if house.size == 1:
 				rect.color = Color(0.769, 0.113, 0.51, 1.0)
 			if house.size == 8:
