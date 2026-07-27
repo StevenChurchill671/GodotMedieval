@@ -8,7 +8,7 @@ extends Area3D
 ##that this area is active as buildable 
 ##or not
 var isActive = false
-
+var size = 8
 var containedStructure
 
 func replaceStructure(newStructure):

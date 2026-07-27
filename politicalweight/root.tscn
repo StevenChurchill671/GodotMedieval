@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://7tssdwv464pe" path="res://Player/player_test.tscn" id="2_pyidc"]
 [ext_resource type="PackedScene" uid="uid://cbhe00ynebmpu" path="res://Areas/initousingloc.tscn" id="3_vvh5c"]
 [ext_resource type="PackedScene" uid="uid://dqem61q16uny6" path="res://initialisers/houseinitialiser.tscn" id="4_28aoi"]
-[ext_resource type="PackedScene" uid="uid://cpnyi4fekwsma" path="res://map_generator.tscn" id="4_bf3um"]
 [ext_resource type="PackedScene" uid="uid://cdain30anl6f3" path="res://initialisers/location_initialiser.tscn" id="5_jnlp7"]
 [ext_resource type="PackedScene" uid="uid://23jg7w0lvr4b" path="res://sun.tscn" id="7_vyht1"]
 
@@ -25,8 +24,6 @@ script = ExtResource("1_l8v81")
 [node name="locationInitialiser" parent="." unique_id=342454759 instance=ExtResource("5_jnlp7")]
 
 [node name="houseinitialiser" parent="." unique_id=387739536 instance=ExtResource("4_28aoi")]
-
-[node name="MapGenerator" parent="." unique_id=1480410674 instance=ExtResource("4_bf3um")]
 
 [node name="initialfloor" parent="." unique_id=1492818229 instance=ExtResource("1_pq8q7")]
 
