@@ -15,8 +15,16 @@ func _ready():
 	childTwo.add_child(newChildOne)
 	newChildOne.text = "hey"
 
-func createMap(position):
+func createMap(locations):
+	var translateAmount = Vector2(0.2,0.2)
 	print("createMap")
-	var rect = ColorRect.new()
-	add_child(rect)
-	#rect.set_position(Vector2(1,2))
+	for location in locations:
+		var housingAreas =  location.passHousingAreas()
+		for house in housingAreas:
+			var rect = ColorRect.new()
+			add_child(rect)
+			if house.size == 1:
+				rect.color = Color(0.769, 0.113, 0.51, 1.0)
+			if house.size == 8:
+				rect.color = Color(0.0, 0.357, 0.0, 1.0)
+			rect.set_position(Vector2(house.position.x,house.position.z))
