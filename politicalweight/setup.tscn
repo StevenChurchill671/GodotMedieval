@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://caa58271k1gv0"]
+
+[ext_resource type="Script" uid="uid://cr1aprr2trdbf" path="res://setup.gd" id="1_yujpc"]
+
+[node name="setup" type="SubViewportContainer" unique_id=1231093594]
+editor_description = "experimental"
+script = ExtResource("1_yujpc")

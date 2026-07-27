@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://7tssdwv464pe"]
 
 [ext_resource type="Script" uid="uid://cldtjix08dkji" path="res://Player/player_test.gd" id="1_xys6k"]
+[ext_resource type="PackedScene" uid="uid://cpnyi4fekwsma" path="res://map_generator.tscn" id="2_o7sax"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g4v7s"]
 
@@ -18,3 +19,5 @@ shape = SubResource("CapsuleShape3D_g4v7s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=827375775]
 mesh = SubResource("CapsuleMesh_g4v7s")
+
+[node name="MapGenerator" parent="." unique_id=1480410674 instance=ExtResource("2_o7sax")]

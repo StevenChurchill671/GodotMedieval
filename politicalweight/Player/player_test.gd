@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
-
+var isMapOpen = false
+var map
 @onready
 var camera = $Camera3D
 @onready
@@ -24,6 +25,16 @@ func  _unhandled_input(event: InputEvent) -> void:
 		camera.rotate_x(-event.relative.y * .005)
 		camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
 func _physics_process(delta):
+	if Input.is_action_just_pressed("openMap"):
+		if isMapOpen == true:
+			$Camera3D.get_child(0).queue_free()
+			isMapOpen = false
+			$Camera3D.current = true
+		else:
+			map = setup.new()
+			$Camera3D.add_child(map)
+			isMapOpen = true
+			$MapGenerator.generateMapData()
 	var inputDirection = Input.get_vector("left", "right", "down", "up")
 	var forward = -camera.global_transform.basis.z
 	var right = camera.global_transform.basis.x

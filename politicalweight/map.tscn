@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b7o28stlld5f5"]
+
+[node name="Map" type="CanvasLayer" unique_id=1836138039]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=920634296]
+position = Vector2(580, 330)

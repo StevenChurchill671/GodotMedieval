@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bixbgedr6h1we"]
+
+[ext_resource type="Script" uid="uid://bff8af8w3ei6u" path="res://start_config.gd" id="1_hsku8"]
+
+[node name="startConfig" type="Node" unique_id=1326267329]
+script = ExtResource("1_hsku8")
