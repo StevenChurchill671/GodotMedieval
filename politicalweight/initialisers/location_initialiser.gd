@@ -41,4 +41,24 @@ func initialiseLocations():
 	localMovement.position = Vector3(90,0,0)
 	locationStorage.append(localMovement)
 	
+	localMovement = initialhousinglocation.instantiate()
+	add_child(localMovement)
+	localMovement.position = Vector3(60,0,60)
+	locationStorage.append(localMovement)
+	
+	localMovement = fieldOneLocation.instantiate()
+	add_child(localMovement)
+	localMovement.position = Vector3(-30,0,60)
+	locationStorage.append(localMovement)
+	
+	localMovement = initialhousinglocation.instantiate()
+	add_child(localMovement)
+	localMovement.position = Vector3(-60,0,-60)
+	locationStorage.append(localMovement)
+	
+	localMovement = initialhousinglocation.instantiate()
+	add_child(localMovement)
+	localMovement.position = Vector3(-60,0,0)
+	locationStorage.append(localMovement)
+	
 	return getLocationStorage()
