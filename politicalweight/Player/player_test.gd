@@ -20,7 +20,7 @@ func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	self.name = "player"
 func  _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion && not isMapOpen:
 		rotate_y(-event.relative.x * .005)
 		camera.rotate_x(-event.relative.y * .005)
 		camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
@@ -29,11 +29,12 @@ func _physics_process(delta):
 		if isMapOpen == true:
 			$Camera3D.get_child(0).queue_free()
 			isMapOpen = false
-			$Camera3D.current = true
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		else:
 			map = setup.new()
 			$Camera3D.add_child(map)
 			isMapOpen = true
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 			$MapGenerator.generateMapData()
 	var inputDirection = Input.get_vector("left", "right", "down", "up")
 	var forward = -camera.global_transform.basis.z
@@ -48,29 +49,15 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump"): #&& stamina >= 20 :
 		#stamina -= 20
 		self.velocity.y = jumpHeight 
-	#var inputDirection = Input.get_vector("left","right","down","up")
-	#var direction = (transform.basis * Vector3(inputDirection.x, 0, inputDirection.y)).normalized()
-	# Capture input for movement
-	#if Input.is_action_pressed("right"):
-		#direction.x += 1
-	#if Input.is_action_pressed("left"):
-		#direction.x -= 1
-	#if Input.is_action_pressed("down"):
-		#direction.z += 1
-	#if Input.is_action_pressed("up"):
-		#direction.z -= 1
 	
 	# Normalize direction to prevent faster diagonal movement
-	if direction != Vector3.ZERO:
+	if direction != Vector3.ZERO && ! isMapOpen:
 		self.velocity.x = direction.x * speed
 		self.velocity.z = direction.z * speed
 	else:
 		self.velocity.x = move_toward(self.velocity.x, 0 , speed)
 		self.velocity.z = move_toward(self.velocity.z, 0 , speed)
 	# Apply horizontal velocity
-	
-	#velocity.x = direction.x * speed
-	#velocity.z = direction.z * speed
 	
 	# Apply gravity when not on the floor
 	if not is_on_floor():
