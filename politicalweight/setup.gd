@@ -1,6 +1,9 @@
 class_name setup
 extends CanvasLayer
 
+##eventually intended to print a set of map
+##config data that i can use to replicate
+## a design i like for map creation.
 func printSpecsForConfig():
 	print("config specs")
 
@@ -40,9 +43,10 @@ func createMap(locations):
 			add_child(rect)
 			if house.size == 1:
 				rect.color = Color(0.769, 0.113, 0.51, 1.0)
+				rect.set_size(Vector2(25,25))
 			if house.size == 8:
 				rect.color = Color(0.0, 0.357, 0.0, 1.0)
-			rect.set_position(Vector2(house.position.x,house.position.z)*translateAmount)
-			rect.set_size(Vector2(25,25))
+				rect.set_size(Vector2(0,0))
+			rect.set_position(Vector2(house.global_position.x,house.global_position.z)*translateAmount)
+			#rect.set_size(Vector2(25,25))
 			listOfAreaRects.append(rect)
-			print("rect")

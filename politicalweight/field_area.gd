@@ -18,3 +18,9 @@ func replaceStructure(newStructure):
 		add_child(newStructure)
 	else:
 		add_child(newStructure)
+
+func activateArea():
+	isActive = true
+	
+func deActivateArea():
+	isActive = false

@@ -9,4 +9,4 @@
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.37603486, 0, 0.543736)
 
 [node name="fieldOne" parent="." unique_id=176177761 instance=ExtResource("2_sasra")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.76277, 0, 0.32718563)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.989002, 0, 58.567287)

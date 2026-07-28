@@ -38,37 +38,37 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, -4)
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, -10)
 
 [node name="inithousearea5" parent="." unique_id=1892905652 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 4.58409)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 4)
 
 [node name="inithousearea6" parent="." unique_id=994085761 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 10.58409)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 10)
 
 [node name="inithousearea7" parent="." unique_id=1153171205 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 10.58409)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 10)
 
 [node name="inithousearea8" parent="." unique_id=2061431522 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 4.58409)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 4)
 
 [node name="inithousearea9" parent="." unique_id=1141618550 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, -10)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 1.25, -10)
 
 [node name="inithousearea10" parent="." unique_id=456025061 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, -4)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 1.25, -4)
 
 [node name="inithousearea11" parent="." unique_id=541024261 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, -4)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10, 1.25, -4)
 
 [node name="inithousearea12" parent="." unique_id=1618703890 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, -10)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10, 1.25, -10)
 
 [node name="inithousearea13" parent="." unique_id=1094842199 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, 4.5183277)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 1.25, 4)
 
 [node name="inithousearea14" parent="." unique_id=141746350 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 3.7274723, 1.25, 10.518328)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 1.25, 10)
 
 [node name="inithousearea15" parent="." unique_id=1567851832 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, 10.518328)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10, 1.25, 10)
 
 [node name="inithousearea16" parent="." unique_id=710590935 instance=ExtResource("2_gcdfv")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.727472, 1.25, 4.5183277)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10, 1.25, 4)
