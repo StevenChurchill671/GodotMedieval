@@ -27,33 +27,45 @@ surface_material_override/0 = SubResource("StandardMaterial3D_yf5fn")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/MeshInstance3D/StaticBody3D" unique_id=1009057892]
 shape = SubResource("ConvexPolygonShape3D_ry13d")
 
-[node name="inithousearea" parent="." unique_id=1893808890 instance=ExtResource("1_43gsj")]
+[node name="fieldArea1a" parent="." unique_id=1855100109 instance=ExtResource("2_mcvmn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.979, 2, -12.851)
+visible = false
+
+[node name="fieldArea2a" parent="." unique_id=1373550262 instance=ExtResource("2_mcvmn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27.631, 2, -12.182)
+visible = false
+
+[node name="fieldArea2b" parent="." unique_id=456606633 instance=ExtResource("2_mcvmn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27.763, 2, 12.854)
+visible = false
+
+[node name="fieldArea1b" parent="." unique_id=786889867 instance=ExtResource("2_mcvmn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.187, 2, 13.027)
+visible = false
+
+[node name="inithousearea1a" parent="." unique_id=1893808890 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2.5, -20)
 
-[node name="inithousearea2" parent="." unique_id=735231499 instance=ExtResource("1_43gsj")]
+[node name="inithousearea2a" parent="." unique_id=735231499 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2.5, -20)
 
-[node name="inithousearea3" parent="." unique_id=304559530 instance=ExtResource("1_43gsj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2.5, -20)
+[node name="inithousearea2a2" parent="." unique_id=354507041 instance=ExtResource("1_43gsj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2.5, -8)
+
+[node name="inithousearea2b" parent="." unique_id=175562214 instance=ExtResource("1_43gsj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2.5, -8)
 
 [node name="inithousearea4" parent="." unique_id=1831353721 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2.5, -20)
 
-[node name="fieldArea" parent="." unique_id=1855100109 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25.979, 2, -12.851)
-visible = false
+[node name="inithousearea3" parent="." unique_id=304559530 instance=ExtResource("1_43gsj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2.5, -20)
 
 [node name="inithousearea5" parent="." unique_id=2046400611 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2.5, -8)
 
 [node name="inithousearea6" parent="." unique_id=1804498018 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2.5, -8)
-
-[node name="inithousearea7" parent="." unique_id=175562214 instance=ExtResource("1_43gsj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2.5, -8)
-
-[node name="inithousearea8" parent="." unique_id=354507041 instance=ExtResource("1_43gsj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2.5, -8)
 
 [node name="inithousearea9" parent="." unique_id=525965906 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2.5, 8)
@@ -126,15 +138,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 2.5, -8)
 
 [node name="inithousearea32" parent="." unique_id=48856135 instance=ExtResource("1_43gsj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2.5, -8)
-
-[node name="fieldArea2" parent="." unique_id=1373550262 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27.631, 2, -12.182)
-visible = false
-
-[node name="fieldArea3" parent="." unique_id=456606633 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 27.763, 2, 12.854)
-visible = false
-
-[node name="fieldArea4" parent="." unique_id=786889867 instance=ExtResource("2_mcvmn")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.187, 2, 13.027)
-visible = false

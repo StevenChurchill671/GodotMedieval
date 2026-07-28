@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ljwt1q8tqluy"]
+
+[ext_resource type="Script" uid="uid://jngvyxqqqmoo" path="res://medium_area.gd" id="1_kgvjd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kgvjd"]
+albedo_color = Color(0.27355346, 0.58757067, 0.72256494, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
+material = SubResource("StandardMaterial3D_kgvjd")
+
+[node name="mediumArea" type="Area3D" unique_id=1435264868]
+script = ExtResource("1_kgvjd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=814792035]
+transform = Transform3D(5, 0, 0, 0, 2, 0, 0, 0, 5, 0, 0, 0)
+mesh = SubResource("BoxMesh_g4v7s")

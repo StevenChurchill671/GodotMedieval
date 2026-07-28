@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bbh02n6h42v83" path="res://Areas/initousingloc.gd" id="1_f13te"]
 [ext_resource type="PackedScene" uid="uid://qsbjhce4yrpa" path="res://Areas/inithousearea.tscn" id="2_gcdfv"]
+[ext_resource type="PackedScene" uid="uid://ljwt1q8tqluy" path="res://medium_area.tscn" id="3_gcdfv"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_g4v7s"]
 
@@ -25,6 +26,9 @@ transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("PlaneMesh_yf5fn")
 surface_material_override/0 = SubResource("StandardMaterial3D_yf5fn")
 
+[node name="mediumArea" parent="." unique_id=1435264868 instance=ExtResource("3_gcdfv")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, -7, 0.5, -7)
+
 [node name="inithousearea" parent="." unique_id=1893808890 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, -10)
 
@@ -36,6 +40,9 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, -4)
 
 [node name="inithousearea4" parent="." unique_id=1955866672 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, -10)
+
+[node name="mediumArea3" parent="." unique_id=1482668224 instance=ExtResource("3_gcdfv")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, -7, 0.5, 6.593)
 
 [node name="inithousearea5" parent="." unique_id=1892905652 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -10, 1.25, 4)
@@ -49,6 +56,9 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 10)
 [node name="inithousearea8" parent="." unique_id=2061431522 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -4, 1.25, 4)
 
+[node name="mediumArea2" parent="." unique_id=666209790 instance=ExtResource("3_gcdfv")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 7, 0.5, -7)
+
 [node name="inithousearea9" parent="." unique_id=1141618550 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 1.25, -10)
 
@@ -60,6 +70,9 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10, 1.25, -4)
 
 [node name="inithousearea12" parent="." unique_id=1618703890 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10, 1.25, -10)
+
+[node name="mediumArea4" parent="." unique_id=1475898234 instance=ExtResource("3_gcdfv")]
+transform = Transform3D(2.2, 0, 0, 0, 2.2, 0, 0, 0, 2.2, 7, 0.5, 7)
 
 [node name="inithousearea13" parent="." unique_id=1094842199 instance=ExtResource("2_gcdfv")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 1.25, 4)
